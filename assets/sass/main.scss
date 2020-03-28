@@ -1,0 +1,116 @@
+$colorN :green;
+$fullsize: 100%;
+$sm: 600px;
+$lg: 996px;
+
+@import "navbar";
+
+@mixin centrarTexto($aling: center) {
+    text-align: $aling;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    height: $fullsize;
+}
+
+
+#bedu-logo {
+    margin-left: 20px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+#bedu-logo svg{
+    fill: white;
+}
+
+section {
+    background-image: url(../images/playa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $fullsize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* justify-content: center; */
+
+section>div{
+    @include centrarTexto();
+    width: $fullsize;
+    
+}
+h3{
+    margin-top: 0;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+}
+
+input::placeholder{
+    @include centrarTexto(right);
+}
+input{
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 25%;
+}
+
+
+.container-title-subtitle > p:first-child{
+    font-size: 30px;
+    text-shadow: 1px 1px 4px rgb(0,0,0,0.45);
+}
+
+.container-title-subtitle > p:last-child{
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+
+@media screen and (max-width: $sm) {
+    section {
+        background-image: url(../images/playa2.jpg);
+    }
+    input {
+        display: none;
+    }
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    display: flex;
+}
+.iconos {
+    @include centrarTexto(center);
+    padding: 10px 0;
+}
+.iconos img {
+    width: 10%;
+}
+
+
+@media only screen and (max-width: $sm){
+    .row {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: $lg){
+    .container-title-subtitle > p:first-child {
+        color: white;
+    }
+}

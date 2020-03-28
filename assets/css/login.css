@@ -1,0 +1,30 @@
+.logo svg {
+  width: 100px;
+  fill: white;
+}
+
+.boton, .btn-cancelar, .btn-entrar {
+  color: white;
+  width: 100%;
+  background-color: white;
+}
+.boton:hover, .btn-cancelar:hover, .btn-entrar:hover {
+  color: white;
+  background-color: white;
+}
+
+.btn-entrar {
+  background-color: red;
+}
+.btn-entrar:hover {
+  background-color: #ff3333;
+}
+
+.btn-cancelar {
+  background-color: green;
+}
+.btn-cancelar:hover {
+  background-color: #00b300;
+}
+
+/*# sourceMappingURL=login.css.map */
